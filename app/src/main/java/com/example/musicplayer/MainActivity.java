@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int temp = (int) startTime;
                 if ((temp - backwardTime) > 0) {
-                    startTime = startTime = backwardTime;
+                    startTime = startTime - backwardTime;
                     mediaPlayer.seekTo((int) startTime);
                 }
                 else {
